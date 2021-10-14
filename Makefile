@@ -16,4 +16,4 @@ $(PYENV)/bin/activate: requirements.txt
 	touch $(PYENV)/bin/activate
 
 clean:
-	rm -rf $(PYENV) netcdf csv
+	rm -rf $(PYENV) netcdf
