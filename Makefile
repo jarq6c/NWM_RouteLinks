@@ -3,6 +3,9 @@ PYTHON=$(PYENV)/bin/python3
 
 .PHONY: clean
 
+RouteLinks.tar.gz: csv
+	tar -czvf RouteLinks.tar.gz csv
+
 csv: $(PYENV)/bin/activate netcdf
 	$(PYTHON) scripts/make_csv.py -i netcdf -o csv
 
@@ -16,4 +19,4 @@ $(PYENV)/bin/activate: requirements.txt
 	touch $(PYENV)/bin/activate
 
 clean:
-	rm -rf $(PYENV) netcdf
+	rm -rf $(PYENV) netcdf csv
