@@ -3,6 +3,11 @@ PYTHON=$(PYENV)/bin/python3
 
 .PHONY: clean
 
+all: RouteLink.h5 RouteLinks.tar.gz
+
+RouteLink.h5: csv
+	$(PYTHON) scripts/make_hdf.py -i csv -o RouteLink.h5
+
 RouteLinks.tar.gz: csv
 	tar -czvf RouteLinks.tar.gz csv
 
@@ -17,6 +22,9 @@ $(PYENV)/bin/activate: requirements.txt
 	$(PYTHON) -m pip install -U pip wheel
 	$(PYTHON) -m pip install -r requirements.txt
 	touch $(PYENV)/bin/activate
+
+all-clean: clean
+	rm -rf RouteLink.h5 RouteLinks.tar.gz
 
 clean:
 	rm -rf $(PYENV) netcdf csv
