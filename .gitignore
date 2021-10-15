@@ -133,3 +133,4 @@ dmypy.json
 *.csv
 *.tar
 *.gz
+*.h5
