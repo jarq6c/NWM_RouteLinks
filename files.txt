@@ -1,3 +1,4 @@
-https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v2.2.3/parm/domain/RouteLink_CONUS.nc
-https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v2.2.3/parm/domain_hawaii/RouteLink_HI.nc
-https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v2.2.3/parm/domain_puertorico/RouteLink_PRVI.nc
+https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v3.0.7/parm/domain/RouteLink_CONUS.nc
+https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v3.0.7/parm/domain_alaska/RouteLink_AK.nc
+https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v3.0.7/parm/domain_hawaii/RouteLink_HI.nc
+https://www.nco.ncep.noaa.gov/pmb/codes/nwprod/nwm.v3.0.7/parm/domain_puertorico/RouteLink_PRVI.nc
